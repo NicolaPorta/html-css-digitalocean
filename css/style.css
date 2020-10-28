@@ -86,6 +86,7 @@ nav .menu {
   background-image: url("../img/fish.svg");
   margin-top: 70px;
   padding: 60px 0;
+  background-size: cover;
 }
 
 .jumbotron .title {
@@ -103,6 +104,7 @@ nav .menu {
   font-size: 22px;
   margin-top: 20px;
   margin-bottom: 0;
+  color: lightgrey;
 }
 
 .jumbotron .sign {
@@ -114,11 +116,11 @@ nav .menu {
 
 .jumbotron .sign h2 {
   font-weight: bold;
-  line-height: 20px;
 }
 
 .jumbotron .sign > h2:nth-child(2n) {
   color: #0061FF;
+  margin-top: 0;
 }
 
 .jumbotron form {
@@ -200,5 +202,15 @@ nav .menu {
 @media screen and (max-width: 767px) {
 
 
+
+}
+
+/* md variation */
+@media screen and (max-width: 1200px)  {
+
+  .jumbotron h1 {
+    font-size: 48px;
+    padding-right: 0;
+  }
 
 }
