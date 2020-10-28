@@ -1,12 +1,4 @@
 /* general */
-.debug>* {
-  border: 1px solid green;
-  height: 500px;
-}
-
-.debug [class*="col-"] {
-  border: 1px solid red;
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -14,6 +6,10 @@ body {
 
 ul {
   list-style: none;
+}
+
+span {
+  display: inline-block;
 }
 /* /general */
 
@@ -50,6 +46,16 @@ nav li a {
   color: black;
   font-size: 15px;
   vertical-align: middle;
+  transition: color 0.5s;
+}
+
+nav li a:hover {
+  color: #0061FF;
+  text-decoration: none;
+}
+
+nav li a:visited {
+  color: black;
 }
 
 nav li i {
@@ -59,6 +65,12 @@ nav li i {
 nav li .btn {
   border: 1px solid #0061FF;
   color: #0061FF;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+nav li .btn:hover {
+  background-color: #0061FF;
+  color: white;
 }
 
 nav .menu {
@@ -72,29 +84,45 @@ nav .menu {
 /* jumbotron */
 .jumbotron {
   background-image: url("../img/fish.svg");
-  height: 500px;
   margin-top: 70px;
   padding: 60px 0;
 }
 
 .jumbotron .title {
   color: white;
+  padding-right: 40px;
 }
 
 .jumbotron h1 {
-  font-size: 60px;
+  font-size: 58px;
   padding-right: 20px;
+  font-weight: bold;
 }
 
-.jumbotron p {
+.jumbotron .title p {
   font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .jumbotron .sign {
   background-color: white;
   border-radius: 8px;
   text-align: center;
-  margin-left:
+  padding: 20px;
+}
+
+.jumbotron .sign h2 {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.jumbotron .sign > h2:nth-child(2n) {
+  color: #0061FF;
+}
+
+.jumbotron form {
+  margin-top: 15px;
 }
 
 .jumbotron input {
@@ -102,12 +130,62 @@ nav .menu {
   width: 100%;
   border-radius: 5px;
   border: 0.5px solid lightgrey;
-  padding: 10px 0;
+  padding: 10px 3px;
   margin-bottom: 10px;
 }
 
+.jumbotron input:focus-within {
+  outline: none;
+}
+
+.jumbotron .btn {
+  font-weight: bold;
+}
+
+.jumbotron button.btn {
+  width: 100%;
+  background-color: #669cf2;
+  color: white;
+  transition: background-color 0.5s;
+}
+
+.jumbotron button.btn:hover {
+  background-color: #0061FF;
+}
+
+.jumbotron .btn-sign {
+  width: 100%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
+  color: #26364f;
+  position: relative;
+  transition: background-color 0.5s;
+}
+
+.jumbotron .btn-sign:hover {
+  background-color: #e9edf5;
+}
+
 .jumbotron .g-logo {
-  
+  width: 18px;
+  position: absolute;
+  left: 5px;
+  vertical-align: middle;
+}
+
+.jumbotron .sign p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.jumbotron .sign p a {
+  text-decoration: underline;
+  color: #0061FF;
+  transition: color 0.5s;
+}
+
+.jumbotron .sign p a:hover {
+  color: #669cf2;
 }
   /* /jumbotron */
 
