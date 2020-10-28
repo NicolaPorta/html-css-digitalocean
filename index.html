@@ -6,20 +6,103 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Struttura</title>
 </head>
-<body>
+<body class="debug">
   <!-- header structure -->
   <header>
     <!-- nav structure -->
     <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-lg-3">
+            <a href="#">
+              <img class="ocean-logo" src="img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="col-lg-5 hidden-xs hidden-sm hidden-md">
+            <ul>
+              <li>
+                <a href="#">
+                  <span>Products</span>
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Customers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Community</span>
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Pricing</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-lg-4 text-right">
+            <ul class="hidden-xs hidden-sm hidden-md">
+              <li>
+                <a href="#">
+                  <span>Docs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Support</span>
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Login</span>
+                </a>
+              </li>
+              <li>
+                <a class="btn" href="#">Sign Up</a>
+              </li>
+            </ul>
+            <button class="btn hidden-lg menu" type="button" name="button">
+              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- /nav structure -->
 
     <!-- jumbotron -->
-    <div class="header-bottom">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="col-xs-12 col-md-7 title">
+          <h1>The simplest cloud platform for developers & teams</h1>
+          <p>
+            Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-5 sign">
+          <h2>Deploy your app in seconds</h2>
+          <h2>Get started now.</h2>
+          <form class="" action="index.html" method="post">
+            <input type="email" name="email" value="" placeholder="Email">
+            <input type="password" name="" value="" placeholder="Password">
+            <button type="submit" name="button">Create your account</button>
+          </form>
+          <a class="btn" href="#">
+            <img class="g-logo" src="img/g-logo.webp" alt="G-logo">
+            <span>Sign up whit google</span>
+          </a>
+          <p>text <a href="#"></a> </p>
+        </div>
+      </div>
     </div>
     <!-- /jumbotron -->
   </header>
