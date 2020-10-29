@@ -142,6 +142,11 @@ nav .menu:focus-within {
   border-radius: 8px;
   text-align: center;
   padding: 20px;
+  transition: box-shadow 0.5s;
+}
+
+.jumbotron .sign:hover {
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .jumbotron .sign > h2:nth-child(2n) {
@@ -536,6 +541,60 @@ footer ul a:hover {
   text-decoration: none;
   color: #0061FF;
 }
+/* /footer */
+
+/* chatbot */
+.chat-bot button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #091596;
+  padding: 1px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.5s;
+}
+
+.chat-bot .btn-chat img {
+  width: 50px;
+  height: 50px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.chat-bot button .help {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  background-color: white;
+  width: 290px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  text-align: left;
+  box-shadow: 1px 1px 2px 1px rgba(133, 131, 126, 0.4), -1px -1px 2px 1px rgba(133, 131, 126, 0.4), -1px 1px 2px 1px rgba(133, 131, 126, 0.4);
+}
+
+.chat-bot button .help span {
+  font-size: 13px;
+  margin-right: 12px;
+}
+
+.chat-bot button:focus-within,
+.chat-bot button:hover {
+  box-shadow: 1px 1px 2px 1px rgba(133, 131, 126, 0.2), -1px -1px 2px 1px rgba(133, 131, 126, 0.2), -1px 1px 2px 1px rgba(133, 131, 126, 0.2);
+}
+
+.chat-bot button:focus-within img {
+  width: 40px;
+  height: 40px;
+}
+
+.chat-bot button:focus-within .help {
+  display: block;
+}
+
 /* sm variation */
 @media screen and (max-width: 991px) {
 
