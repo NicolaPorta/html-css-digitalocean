@@ -23,6 +23,15 @@ p {
 .background-lightgrey {
   background-color: #F3F5F9;
 }
+
+a:visited {
+  color: none;
+  text-decoration: none;
+}
+
+a:focus-within {
+  text-decoration: none;
+}
 /* /general */
 
 /* header structure */
@@ -66,10 +75,6 @@ nav li a {
 nav li a:hover {
   color: #0061FF;
   text-decoration: none;
-}
-
-nav li a:visited {
-  color: black;
 }
 
 nav li i {
