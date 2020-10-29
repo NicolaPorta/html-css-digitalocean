@@ -365,6 +365,30 @@ section .blue-circle {
 #features p {
   font-size: 15px;
 }
+/* /features */
+
+/* test speed */
+#test-speed {
+  background-image: url("../img/bg-map.svg");
+  background-color: #0a3982;
+  background-size: cover;
+  color: white;
+  padding: 40px 0;
+}
+
+#test-speed .line > .row {
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+}
+
+#test-speed .line.left > .row {
+  margin-right: 5px;
+}
+
+#test-speed .line.right > .row {
+  margin-left: 5px;
+}
+
 /* md variation */
 @media screen and (min-width: 992px) {
 
