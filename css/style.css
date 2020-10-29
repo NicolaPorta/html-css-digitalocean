@@ -11,6 +11,14 @@ ul {
 span {
   display: inline-block;
 }
+
+h2, h4 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 22px;
+}
 /* /general */
 
 /* header structure */
@@ -116,10 +124,6 @@ nav .menu {
   padding: 20px;
 }
 
-.jumbotron .sign h2 {
-  font-weight: bold;
-}
-
 .jumbotron .sign > h2:nth-child(2n) {
   color: #0061FF;
   margin-top: 0;
@@ -198,6 +202,11 @@ nav .menu {
 section a {
   color: #0061FF;
   font-size: 17px;
+  transition: color 0.5s;
+}
+
+section a:hover {
+  color: #669cf2;
 }
 /* banner advertising */
 #banner-advertising {
@@ -210,6 +219,46 @@ section a {
   margin: 0 10px;
   vertical-align: middle;
 }
+/* /banner advertising */
+
+/* seamlessly */
+#seamlessly {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#seamlessly .row.text-left {
+  padding: 40px 4%;
+}
+
+#seamlessly .menu li a span{
+  color: #5a759e;
+  border-left: 2px solid lightgrey;
+  padding-left: 10px;
+  line-height: 50px;
+  font-size: 20px;
+  transition: border-color 0.5s;
+}
+
+#seamlessly .menu li a span:hover {
+  border-left: 2px solid #0061FF;
+}
+
+#seamlessly .seamlessly-section {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#seamlessly .seamlessly-section img {
+  background-color: white;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+#seamlessly .seamlessly-section p {
+  font-size: 15px;
+}
 
 /* md variation */
 @media screen and (min-width: 992px) {
@@ -217,12 +266,25 @@ section a {
 
 
 }
-/* xs variation */
+/* sm variation */
 @media screen and (max-width: 991px) {
 
   #banner-advertising img {
     width: calc((100% / 2) - 72px);
     margin: 20px 35px;
+  }
+
+  #seamlessly .row.text-left,
+  #seamlessly .menu  {
+    padding-left: 0;
+  }
+
+  #seamlessly .row.text-left {
+    padding-bottom: 15px;
+  }
+
+  #seamlessly .menu {
+    margin-bottom: 20px;
   }
 
 }
