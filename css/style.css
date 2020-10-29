@@ -12,7 +12,7 @@ span {
   display: inline-block;
 }
 
-h2, h4 {
+h2, h4, h6 {
   font-weight: bold;
 }
 
@@ -223,6 +223,12 @@ nav .menu:focus-within {
 /* .header structure */
 
 /* section structure */
+ section .img-box i, section .box i {
+  font-size: 50px;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
 section a {
   color: #0061FF;
   font-size: 17px;
@@ -237,6 +243,20 @@ section a:hover {
 section .blue-circle {
   font-size: 20px;
   color: #0061FF;
+}
+
+section .blue-circle button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #0061FF;
+  box-shadow: none;
+  outline: none;
+}
+
+section .blue-circle button.solid {
+  background-color: #0061FF;
 }
 /* banner advertising */
 #banner-advertising {
@@ -316,29 +336,9 @@ section .blue-circle {
   box-shadow: 1px 1px 2px 1px lightgrey;
 }
 
-#designed-for-developers .img-box i {
-  font-size: 50px;
-  vertical-align: middle;
-  margin: 0 20px;
-}
-
 #designed-for-developers figcaption {
   margin-top: 20px;
   font-size: 16px;
-}
-
-#designed-for-developers button {
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid #0061FF;
-  box-shadow: none;
-  outline: none;
-}
-
-#designed-for-developers button.solid {
-  background-color: #0061FF;
 }
 /* /Designed for developers */
 
@@ -377,7 +377,8 @@ section .blue-circle {
 }
 
 #test-speed .line {
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #test-speed .line > .row {
@@ -386,9 +387,45 @@ section .blue-circle {
   margin: 0 5px;
 }
 
-#test-speed .line > .row .col-xs-2:last-child {
+#test-speed .line > .row .col-xs-3:last-child {
   text-align: right;
 }
+
+#test-speed a{
+  font-size: 15px;
+}
+/* /test-speed */
+
+/* Development */
+#development {
+  padding: 50px 0;
+}
+
+#development .img-box {
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 50px 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#development .img-box img {
+  margin: 20px 0;
+}
+
+#development .img-box h5 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#development .img-box .paragraph-h6{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* /Development */
 /* md variation */
 @media screen and (min-width: 992px) {
 
@@ -420,6 +457,9 @@ section .blue-circle {
     width: 78%;
   }
 
+  #development .img-box img {
+    width: 70%;
+  }
 
 }
 
