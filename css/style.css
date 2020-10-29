@@ -223,12 +223,6 @@ nav .menu:focus-within {
 /* .header structure */
 
 /* section structure */
- section .img-box i, section .box i {
-  font-size: 50px;
-  vertical-align: middle;
-  margin: 0 20px;
-}
-
 section a {
   color: #0061FF;
   font-size: 17px;
@@ -238,6 +232,18 @@ section a {
 section a:hover {
   color: #669cf2;
   text-decoration: none;
+}
+
+section .img-box i, section .box i {
+ font-size: 50px;
+ vertical-align: middle;
+ margin: 0 20px;
+ transition: color 0.5s;
+}
+
+section .img-box i:hover,
+section .box i:hover {
+ color: #669cf2;
 }
 
 section .blue-circle {
@@ -253,6 +259,10 @@ section .blue-circle button {
   border: 1px solid #0061FF;
   box-shadow: none;
   outline: none;
+}
+
+section .blue-circle button:hover {
+  box-shadow: 1px 1px 2px 1px lightgrey, -1px -1px 2px 1px lightgrey, -1px 1px 2px 1px lightgrey, 1px -1px 2px 1px lightgrey;
 }
 
 section .blue-circle button.solid {
@@ -460,6 +470,72 @@ section .blue-circle button.solid {
 }
 /* /get started */
 
+/* footer */
+footer {
+  background-color: #010E28;
+  color: white;
+  padding: 40px 0;
+}
+
+footer a, footer span.copyright  {
+  color: lightgrey;
+  display: block;
+  transition: color 0.5s;
+}
+
+footer img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  padding: 0;
+  margin-top: 10px;
+}
+
+footer ul.copyright li {
+  display: inline-block;
+}
+
+footer .copyright li a {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+footer ul.copyright a,
+footer span:nth-child(3n) {
+  color: #888a94;
+}
+
+footer ul.copyright a i {
+  transition: color 0.5s;
+}
+
+i.twitter:hover {
+  color: #1da1f2;
+}
+
+i.facebook:hover {
+  color: #3B5998;
+}
+
+i.instagram:hover,
+i.linkedin:hover {
+  color: white;
+}
+
+i.youtube:hover {
+  color: #f50301;
+}
+
+footer ul a {
+  margin-bottom: 10px;
+}
+
+footer ul a:hover {
+  text-decoration: none;
+  color: #0061FF;
+}
 /* sm variation */
 @media screen and (max-width: 991px) {
 
