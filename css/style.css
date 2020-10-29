@@ -646,4 +646,14 @@ footer ul a:hover {
     padding-bottom: 60px;
   }
 
+  .chat-bot button {
+    left: 30px;
+    bottom: 110px;
+  }
+
+  .chat-bot button .help {
+    left: 30px;
+    bottom: 40px;
+  }
+
 }
