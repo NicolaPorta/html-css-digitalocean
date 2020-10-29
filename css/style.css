@@ -19,19 +19,24 @@ h2, h4 {
 p {
   font-size: 22px;
 }
+
+.background-lightgrey {
+  background-color: #F3F5F9;
+}
 /* /general */
 
 /* header structure */
 /* nav structure */
 nav {
-  background-color: white;
-  width: 100%;
-  height: 70px;
-  line-height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 2px solid grey;
 }
 
 .ocean-logo {
@@ -83,10 +88,25 @@ nav li .btn:hover {
 }
 
 nav .menu {
-  color:#0061FF;
+  color: #0061FF;
   background-color: white;
   font-size: 20px;
   vertical-align: middle;
+  transition: color 0.5s, border-color 0.5s;
+}
+
+nav .menu:hover {
+  color: #669cf2;
+}
+
+nav .menu:active {
+  outline-width: 0;
+}
+
+nav .menu:focus-within {
+  outline: none;
+  border-color: #0061FF;
+  color: #669cf2;
 }
 /* /nav structure */
 
@@ -161,6 +181,10 @@ nav .menu {
   background-color: #0061FF;
 }
 
+.jumbotron button.btn:focus-within {
+  outline: none;
+}
+
 .jumbotron .btn-sign {
   width: 100%;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -207,10 +231,16 @@ section a {
 
 section a:hover {
   color: #669cf2;
+  text-decoration: none;
+}
+
+section .blue-circle {
+  font-size: 20px;
+  color: #0061FF;
 }
 /* banner advertising */
 #banner-advertising {
-  background-color: #F3F5F9;
+
   padding: 30px 0;
 }
 
@@ -237,11 +267,12 @@ section a:hover {
   padding-left: 10px;
   line-height: 50px;
   font-size: 20px;
-  transition: border-color 0.5s;
+  transition: border-color 0.5s, color 0.5s;
 }
 
 #seamlessly .menu li a span:hover {
   border-left: 2px solid #0061FF;
+  color: black;
 }
 
 #seamlessly .seamlessly-section {
@@ -259,7 +290,81 @@ section a:hover {
 #seamlessly .seamlessly-section p {
   font-size: 15px;
 }
+/* /seamlessly */
 
+/* Designed for developers */
+#designed-for-developers {
+  padding: 30px 0;
+}
+
+#designed-for-developers .img-box {
+  margin-top: 40px;
+}
+
+#designed-for-developers figure {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+}
+
+#designed-for-developers img {
+  width: 100%;
+  transition: box-shadow 0.5s;
+}
+
+#designed-for-developers img:hover {
+  box-shadow: 1px 1px 2px 1px lightgrey;
+}
+
+#designed-for-developers .img-box i {
+  font-size: 50px;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+#designed-for-developers figcaption {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#designed-for-developers button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #0061FF;
+  box-shadow: none;
+  outline: none;
+}
+
+#designed-for-developers button.solid {
+  background-color: #0061FF;
+}
+/* /Designed for developers */
+
+/* features */
+#features {
+  padding: 60px 0;
+}
+
+#features .row {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#features .row > [class*="col-"] {
+  margin-bottom: 20px;
+}
+
+#features img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+#features p {
+  font-size: 15px;
+}
 /* md variation */
 @media screen and (min-width: 992px) {
 
@@ -287,6 +392,11 @@ section a:hover {
     margin-bottom: 20px;
   }
 
+  #designed-for-developers figure {
+    width: 78%;
+  }
+
+
 }
 
 /* md variation */
@@ -299,6 +409,10 @@ section a:hover {
   .jumbotron h1 {
     font-size: 48px;
     padding-right: 0;
+  }
+
+  #designed-for-developers figure {
+    padding-bottom: 60px;
   }
 
 }
