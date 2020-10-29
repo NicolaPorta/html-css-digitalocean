@@ -387,6 +387,10 @@ section .blue-circle button.solid {
   margin: 0 5px;
 }
 
+#test-speed .line > .row:last-child {
+  border-bottom: none;
+}
+
 #test-speed .line > .row .col-xs-3:last-child {
   text-align: right;
 }
@@ -418,6 +422,7 @@ section .blue-circle button.solid {
 
 #development .img-box img {
   margin: 20px 0;
+  width: 420px;
 }
 
 #development .img-box h5 {
@@ -428,6 +433,10 @@ section .blue-circle button.solid {
 #development .img-box .paragraph-h6{
   font-size: 15px;
   margin-bottom: 20px;
+}
+
+#development .blue-circle {
+  margin-top: 20px;
 }
 /* /Development */
 
@@ -443,7 +452,7 @@ section .blue-circle button.solid {
 #get-started .btn{
   background-color: white;
   margin: 10px 0;
-  transition: background-color 0.5s, color 0.5s;   
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #get-started .btn:hover {
@@ -451,12 +460,6 @@ section .blue-circle button.solid {
 }
 /* /get started */
 
-/* md variation */
-@media screen and (min-width: 992px) {
-
-
-
-}
 /* sm variation */
 @media screen and (max-width: 991px) {
 
@@ -482,14 +485,18 @@ section .blue-circle button.solid {
     width: 78%;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+
   #development .img-box img {
-    width: 70%;
+    width: 100%;
   }
 
 }
 
 /* md variation */
-@media screen and (max-width: 1200px)  {
+@media screen and (max-width: 1200px) {
 
   .vanish {
     display: none;
