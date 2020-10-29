@@ -409,6 +409,11 @@ section .blue-circle button.solid {
   padding: 50px 5px;
   display: inline-block;
   vertical-align: middle;
+  transition: box-shadow 0.5s;
+}
+
+#development .img-box:hover {
+  box-shadow: 1px 1px 2px 1px lightgrey;
 }
 
 #development .img-box img {
@@ -424,8 +429,28 @@ section .blue-circle button.solid {
   font-size: 15px;
   margin-bottom: 20px;
 }
-
 /* /Development */
+
+/* get started */
+#get-started {
+  background-image: url("../img/fish.svg");
+  background-position: top;
+  background-size: cover;
+  color: white;
+  padding: 40px 0;
+}
+
+#get-started .btn{
+  background-color: white;
+  margin: 10px 0;
+  transition: background-color 0.5s, color 0.5s;   
+}
+
+#get-started .btn:hover {
+  background-color: #e9edf5;
+}
+/* /get started */
+
 /* md variation */
 @media screen and (min-width: 992px) {
 
