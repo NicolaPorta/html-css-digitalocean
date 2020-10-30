@@ -25,7 +25,6 @@ p {
 }
 
 a:visited {
-  color: none;
   text-decoration: none;
 }
 
@@ -41,10 +40,10 @@ nav {
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: white;
   width: 100%;
   height: 70px;
   line-height: 70px;
+  background-color: white;
   border-bottom: 2px solid grey;
 }
 
@@ -52,7 +51,7 @@ nav {
   height: 30px;
 }
 
-nav ul {
+ul {
   margin: 0;
 }
 
@@ -77,6 +76,10 @@ nav li a:hover {
   text-decoration: none;
 }
 
+nav li a:focus-within {
+  color: #0061FF;
+}
+
 nav li i {
   vertical-align: middle;
 }
@@ -93,10 +96,10 @@ nav li .btn:hover {
 }
 
 nav .menu {
-  color: #0061FF;
-  background-color: white;
-  font-size: 20px;
   vertical-align: middle;
+  background-color: white;
+  color: #0061FF;
+  font-size: 20px;
   transition: color 0.5s, border-color 0.5s;
 }
 
@@ -104,13 +107,8 @@ nav .menu:hover {
   color: #669cf2;
 }
 
-nav .menu:active {
-  outline-width: 0;
-}
-
 nav .menu:focus-within {
   outline: none;
-  border-color: #0061FF;
   color: #669cf2;
 }
 /* /nav structure */
@@ -118,35 +116,35 @@ nav .menu:focus-within {
 /* jumbotron */
 .jumbotron {
   background-image: url("../img/fish.svg");
+  background-size: cover;
   margin-top: 70px;
   margin-bottom: 0;
   padding: 60px 0;
-  background-size: cover;
 }
 
 .jumbotron .title {
-  color: white;
   padding-right: 40px;
+  color: white;
 }
 
 .jumbotron h1 {
-  font-size: 58px;
   padding-right: 20px;
+  font-size: 58px;
   font-weight: bold;
 }
 
 .jumbotron .title p {
-  font-size: 22px;
   margin-top: 20px;
   margin-bottom: 0;
+  font-size: 22px;
   color: lightgrey;
 }
 
 .jumbotron .sign {
+  padding: 20px;
   background-color: white;
   border-radius: 8px;
   text-align: center;
-  padding: 20px;
   transition: box-shadow 0.5s;
 }
 
@@ -155,8 +153,8 @@ nav .menu:focus-within {
 }
 
 .jumbotron .sign > h2:nth-child(2n) {
-  color: #0061FF;
   margin-top: 0;
+  color: #0061FF;
 }
 
 .jumbotron form {
@@ -166,10 +164,10 @@ nav .menu:focus-within {
 .jumbotron input {
   display: inline-block;
   width: 100%;
-  border-radius: 5px;
-  border: 0.5px solid lightgrey;
   padding: 10px 3px;
   margin-bottom: 10px;
+  border-radius: 5px;
+  border: 0.5px solid lightgrey;
 }
 
 .jumbotron input:focus-within {
@@ -196,11 +194,11 @@ nav .menu:focus-within {
 }
 
 .jumbotron .btn-sign {
+  position: relative;
   width: 100%;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   margin: 10px 0;
   color: #26364f;
-  position: relative;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s;
 }
 
@@ -209,20 +207,20 @@ nav .menu:focus-within {
 }
 
 .jumbotron .g-logo {
-  width: 18px;
   position: absolute;
   left: 5px;
   vertical-align: middle;
+  width: 18px;
 }
 
 .jumbotron .sign p {
-  font-size: 13px;
   margin-bottom: 10px;
+  font-size: 13px;
 }
 
 .jumbotron .sign p a {
-  text-decoration: underline;
   color: #0061FF;
+  text-decoration: underline;
   transition: color 0.5s;
 }
 
@@ -234,26 +232,30 @@ nav .menu:focus-within {
 
 /* section structure */
 section a {
-  color: #0061FF;
   font-size: 17px;
+  color: #0061FF;
   transition: color 0.5s;
 }
 
-section a:hover {
-  color: #669cf2;
-  text-decoration: none;
+section a:visited {
+  color: #0061FF;
 }
 
-section .img-box i, section .box i {
- font-size: 50px;
- vertical-align: middle;
- margin: 0 20px;
- transition: color 0.5s;
+section a:hover {
+  text-decoration: none;
+  color: #669cf2;
+}
+
+section .img-box i, section#development i {
+  vertical-align: middle;
+  margin: 0 20px;
+  font-size: 50px;
+  transition: color 0.5s;
 }
 
 section .img-box i:hover,
 section .box i:hover {
- color: #669cf2;
+  color: #669cf2;
 }
 
 section .blue-circle {
@@ -280,14 +282,17 @@ section .blue-circle button.solid {
 }
 /* banner advertising */
 #banner-advertising {
-
   padding: 30px 0;
 }
 
+#banner-advertising h4 {
+  color: grey;
+}
+
 #banner-advertising img {
-  width: calc((100% / 6) - 25px);
-  margin: 0 10px;
   vertical-align: middle;
+  margin: 0 10px;
+  width: calc((100% / 6) - 25px);
 }
 /* /banner advertising */
 
@@ -302,17 +307,17 @@ section .blue-circle button.solid {
 }
 
 #seamlessly .menu li a span{
+  padding-left: 10px;
+  font-size: 20px;
+  line-height: 50px;
   color: #5a759e;
   border-left: 2px solid lightgrey;
-  padding-left: 10px;
-  line-height: 50px;
-  font-size: 20px;
   transition: border-color 0.5s, color 0.5s;
 }
 
 #seamlessly .menu li a span:hover {
-  border-left: 2px solid #0061FF;
   color: black;
+  border-left: 2px solid #0061FF;
 }
 
 #seamlessly .seamlessly-section {
@@ -321,10 +326,10 @@ section .blue-circle button.solid {
 }
 
 #seamlessly .seamlessly-section img {
-  background-color: white;
-  margin-bottom: 10px;
   width: 50px;
   height: 50px;
+  margin-bottom: 10px;
+  background-color: white;
 }
 
 #seamlessly .seamlessly-section p {
@@ -392,8 +397,8 @@ section .blue-circle button.solid {
   background-image: url("../img/bg-map.svg");
   background-color: #0a3982;
   background-size: cover;
-  color: white;
   padding: 40px 0;
+  color: white;
 }
 
 #test-speed .line {
@@ -402,9 +407,9 @@ section .blue-circle button.solid {
 }
 
 #test-speed .line > .row {
-  border-bottom: 1px solid white;
-  padding: 5px 0;
   margin: 0 5px;
+  padding: 5px 0;
+  border-bottom: 1px solid white;
 }
 
 #test-speed .line > .row:last-child {
@@ -425,14 +430,20 @@ section .blue-circle button.solid {
   padding: 50px 0;
 }
 
-#development .img-box {
-  background-color: white;
-  width: 60%;
-  margin: auto;
-  margin-top: 40px;
-  padding: 50px 5px;
-  display: inline-block;
+#development h2 {
+  margin-bottom: 80px;
+}
+
+#development .box {
   vertical-align: middle;
+  display: inline-block;
+  width: 60%;
+}
+
+#development .img-box {
+  display: inline-block;
+  padding: 50px 5px;
+  background-color: white;
   transition: box-shadow 0.5s;
 }
 
@@ -446,13 +457,13 @@ section .blue-circle button.solid {
 }
 
 #development .img-box h5 {
-  font-weight: bold;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 #development .img-box .paragraph-h6{
-  font-size: 15px;
   margin-bottom: 20px;
+  font-size: 15px;
 }
 
 #development .blue-circle {
@@ -462,16 +473,16 @@ section .blue-circle button.solid {
 
 /* get started */
 #get-started {
+  padding: 40px 0;
   background-image: url("../img/fish.svg");
   background-position: top;
   background-size: cover;
   color: white;
-  padding: 40px 0;
 }
 
 #get-started .btn{
-  background-color: white;
   margin: 10px 0;
+  background-color: white;
   transition: background-color 0.5s, color 0.5s;
 }
 
@@ -482,14 +493,14 @@ section .blue-circle button.solid {
 
 /* footer */
 footer {
+  padding: 40px 0;
   background-color: #010E28;
   color: white;
-  padding: 40px 0;
 }
 
 footer a, footer span.copyright  {
-  color: lightgrey;
   display: block;
+  color: lightgrey;
   transition: color 0.5s;
 }
 
@@ -499,8 +510,8 @@ footer img {
 }
 
 footer ul {
-  padding: 0;
   margin-top: 10px;
+  padding: 0;
 }
 
 footer ul.copyright li {
@@ -508,8 +519,8 @@ footer ul.copyright li {
 }
 
 footer .copyright li a {
-  font-size: 20px;
   margin-right: 10px;
+  font-size: 20px;
 }
 
 footer ul.copyright a,
@@ -543,8 +554,8 @@ footer ul a {
 }
 
 footer ul a:hover {
-  text-decoration: none;
   color: #0061FF;
+  text-decoration: none;
 }
 /* /footer */
 
@@ -553,8 +564,8 @@ footer ul a:hover {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #091596;
   padding: 1px;
+  background-color: #091596;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -567,21 +578,21 @@ footer ul a:hover {
   transition: width 0.5s, height 0.5s;
 }
 
-.chat-bot button .help {
+.chat-bot button span {
   display: none;
   position: fixed;
   bottom: 30px;
   right: 100px;
-  background-color: white;
   width: 290px;
   padding: 8px;
+  background-color: white;
   border-radius: 5px;
   border: 1px solid lightgrey;
   text-align: left;
   box-shadow: 1px 1px 2px 1px rgba(133, 131, 126, 0.4), -1px -1px 2px 1px rgba(133, 131, 126, 0.4), -1px 1px 2px 1px rgba(133, 131, 126, 0.4);
 }
 
-.chat-bot button .help span {
+.chat-bot button span {
   font-size: 13px;
   margin-right: 12px;
 }
@@ -596,12 +607,14 @@ footer ul a:hover {
   height: 40px;
 }
 
-.chat-bot button:focus-within .help {
+.chat-bot button:focus-within span {
   display: block;
 }
+/* chatbot */
 
+/* MEDIAQUERY */
 /* sm variation */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 
   #banner-advertising img {
     width: calc((100% / 2) - 72px);
@@ -629,6 +642,10 @@ footer ul a:hover {
 
 @media screen and (max-width: 768px) {
 
+  h2 {
+    font-size: 35px;
+  }
+
   #development .img-box img {
     width: 100%;
   }
@@ -643,12 +660,16 @@ footer ul a:hover {
   }
 
   .jumbotron h1 {
-    font-size: 48px;
     padding-right: 0;
+    font-size: 48px;
   }
 
-  #designed-for-developers figure {
-    padding-bottom: 60px;
+  #designed-for-developers p {
+    margin-bottom: 140px;
+  }
+
+  #designed-for-developers .blue-circle {
+    margin-top: 60px;
   }
 
   .chat-bot button {
@@ -662,3 +683,4 @@ footer ul a:hover {
   }
 
 }
+/* /MEDIAQUERY */
