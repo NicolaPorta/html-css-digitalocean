@@ -100,6 +100,7 @@ nav .menu {
   background-color: white;
   color: #0061FF;
   font-size: 20px;
+  line-height: 20px;
   transition: color 0.5s, border-color 0.5s;
 }
 
@@ -110,6 +111,10 @@ nav .menu:hover {
 nav .menu:focus-within {
   outline: none;
   color: #669cf2;
+}
+
+nav .menu:active:focus {
+  outline: none;
 }
 /* /nav structure */
 
