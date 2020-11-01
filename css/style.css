@@ -604,19 +604,15 @@ footer ul a:hover {
   display: none;
   position: fixed;
   bottom: 30px;
-  right: 100px;
+  right: 80px;
   width: 290px;
   padding: 8px;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid lightgrey;
   text-align: left;
-  box-shadow: 1px 1px 2px 1px rgba(133, 131, 126, 0.4), -1px -1px 2px 1px rgba(133, 131, 126, 0.4), -1px 1px 2px 1px rgba(133, 131, 126, 0.4);
-}
-
-.chat-bot button .pop-up {
   font-size: 13px;
   margin-right: 12px;
+  box-shadow: 8px 8px 10px rgba(133, 131, 126, 0.15), -8px -8px 10px rgba(133, 131, 126, 0.15), -8px 8px 10px rgba(133, 131, 126, 0.15), 8px -8px 10px rgba(133, 131, 126, 0.15);
 }
 
 .chat-bot button:focus-within,
@@ -642,6 +638,20 @@ footer ul a:hover {
 /* chatbot */
 
 /* MEDIAQUERY */
+/* xs variation */
+@media screen and (max-width: 768px) {
+
+  h2 {
+    font-size: 35px;
+  }
+
+  #development .img-box img {
+    width: 100%;
+  }
+
+}
+/* /xs variation */
+
 /* sm variation */
 @media screen and (max-width: 992px) {
 
@@ -668,18 +678,7 @@ footer ul a:hover {
   }
 
 }
-
-@media screen and (max-width: 768px) {
-
-  h2 {
-    font-size: 35px;
-  }
-
-  #development .img-box img {
-    width: 100%;
-  }
-
-}
+/* /sm variation */
 
 /* md variation */
 @media screen and (max-width: 1200px) {
@@ -706,9 +705,39 @@ footer ul a:hover {
     bottom: 110px;
   }
 
-  .chat-bot button .help {
+  .chat-bot button .pop-up {
     left: 30px;
     bottom: 40px;
+  }
+
+  .chat-bot button .pop-up::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 14px solid white;
+  }
+
+}
+/* /md variation */
+
+/* lg variation */
+@media screen and (min-width: 1201px) {
+
+  .chat-bot button .pop-up::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 16px solid white;
   }
 
 }
