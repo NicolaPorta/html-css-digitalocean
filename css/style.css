@@ -6,6 +6,7 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 span {
@@ -24,11 +25,9 @@ p {
   background-color: #F3F5F9;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:focus-within {
+a:visited,
+a:focus-within,
+a:hover {
   text-decoration: none;
 }
 /* /general */
@@ -47,12 +46,8 @@ nav {
   border-bottom: 2px solid grey;
 }
 
-.ocean-logo {
+nav .ocean-logo {
   height: 30px;
-}
-
-ul {
-  margin: 0;
 }
 
 nav li {
@@ -71,11 +66,7 @@ nav li a {
   transition: color 0.5s;
 }
 
-nav li a:hover {
-  color: #0061FF;
-  text-decoration: none;
-}
-
+nav li a:hover,
 nav li a:focus-within {
   color: #0061FF;
 }
@@ -108,13 +99,10 @@ nav .menu:hover {
   color: #669cf2;
 }
 
-nav .menu:focus-within {
-  outline: none;
-  color: #669cf2;
-}
-
+nav .menu:focus-within,
 nav .menu:active:focus {
   outline: none;
+  color: #669cf2;
 }
 /* /nav structure */
 
@@ -141,7 +129,6 @@ nav .menu:active:focus {
 .jumbotron .title p {
   margin-top: 20px;
   margin-bottom: 0;
-  font-size: 22px;
   color: lightgrey;
 }
 
@@ -149,7 +136,6 @@ nav .menu:active:focus {
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  text-align: center;
   transition: box-shadow 0.5s;
 }
 
@@ -175,7 +161,8 @@ nav .menu:active:focus {
   border: 0.5px solid lightgrey;
 }
 
-.jumbotron input:focus-within {
+.jumbotron input:focus-within,
+.jumbotron button.btn:focus-within {
   outline: none;
 }
 
@@ -194,10 +181,6 @@ nav .menu:active:focus {
   background-color: #0061FF;
 }
 
-.jumbotron button.btn:focus-within {
-  outline: none;
-}
-
 .jumbotron .btn-sign {
   position: relative;
   width: 100%;
@@ -214,7 +197,6 @@ nav .menu:active:focus {
 .jumbotron .g-logo {
   position: absolute;
   left: 5px;
-  vertical-align: middle;
   width: 18px;
 }
 
@@ -247,11 +229,11 @@ section a:visited {
 }
 
 section a:hover {
-  text-decoration: none;
   color: #669cf2;
 }
 
-section .img-box i, section#development i {
+section .img-box i,
+section#development i {
   vertical-align: middle;
   margin: 0 20px;
   font-size: 50px;
@@ -263,11 +245,6 @@ section#development i:hover {
   color: #669cf2;
 }
 
-section .blue-circle {
-  font-size: 20px;
-  color: #0061FF;
-}
-
 section .blue-circle button {
   padding: 0;
   width: 10px;
@@ -276,14 +253,16 @@ section .blue-circle button {
   border: 1px solid #0061FF;
   box-shadow: none;
   outline: none;
-}
-
-section .blue-circle button:hover {
-  box-shadow: 1px 1px 2px 1px lightgrey, -1px -1px 2px 1px lightgrey, -1px 1px 2px 1px lightgrey, 1px -1px 2px 1px lightgrey;
+  font-size: 20px;
+  color: #0061FF;
 }
 
 section .blue-circle button.solid {
   background-color: #0061FF;
+}
+
+section .blue-circle button:hover {
+  box-shadow: 1px 1px 2px 1px lightgrey, -1px -1px 2px 1px lightgrey, -1px 1px 2px 1px lightgrey, 1px -1px 2px 1px lightgrey;
 }
 /* banner advertising */
 #banner-advertising {
@@ -507,13 +486,14 @@ footer span.copyright {
   display: block;
 }
 
-footer a, footer span.copyright  {
-  color: lightgrey;
-  transition: color 0.5s;
-}
-
 footer a {
   display: inline-block;
+}
+
+footer a,
+footer span.copyright  {
+  color: lightgrey;
+  transition: color 0.5s;
 }
 
 footer img {
