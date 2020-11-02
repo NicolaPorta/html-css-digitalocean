@@ -259,7 +259,7 @@ section .img-box i, section#development i {
 }
 
 section .img-box i:hover,
-section .box i:hover {
+section#development i:hover {
   color: #669cf2;
 }
 
@@ -503,10 +503,17 @@ footer {
   color: white;
 }
 
-footer a, footer span.copyright  {
+footer span.copyright {
   display: block;
+}
+
+footer a, footer span.copyright  {
   color: lightgrey;
   transition: color 0.5s;
+}
+
+footer a {
+  display: inline-block;
 }
 
 footer img {
@@ -537,20 +544,20 @@ footer ul.copyright a i {
   transition: color 0.5s;
 }
 
-i.twitter:hover {
+footer i.twitter:hover {
   color: #1da1f2;
 }
 
-i.facebook:hover {
+footer i.facebook:hover {
   color: #3B5998;
 }
 
-i.instagram:hover,
-i.linkedin:hover {
+footer i.instagram:hover,
+footer i.linkedin:hover {
   color: white;
 }
 
-i.youtube:hover {
+footer i.youtube:hover {
   color: #f50301;
 }
 
