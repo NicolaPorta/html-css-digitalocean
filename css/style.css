@@ -172,13 +172,13 @@ nav .menu:active:focus {
 
 .jumbotron button.btn {
   width: 100%;
-  background-color: #669cf2;
+  background-color: #0061FF;
   color: white;
   transition: background-color 0.5s;
 }
 
 .jumbotron button.btn:hover {
-  background-color: #0061FF;
+  background-color: #669cf2;
 }
 
 .jumbotron .btn-sign {
